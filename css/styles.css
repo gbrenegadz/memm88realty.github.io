@@ -11268,9 +11268,10 @@ header.masthead .masthead-heading {
 
 section#contact {
   background-color: #212529;
-  background-image: url("../assets/img/map-image.png");
+  background-image: url("../assets/img/footer-bg.jpg");
   background-repeat: no-repeat;
   background-position: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.3)) , url("../assets/img/footer-bg.jpg");
 }
 section#contact .section-heading {
   color: #fff;
