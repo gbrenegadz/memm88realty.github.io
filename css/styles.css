@@ -11021,6 +11021,16 @@ p {
     aspect-ratio: 16 / 7;
     height: 90%;
   }
+
+  /* This is for the Partner caroussel */
+  #partners.carousel-item > img {
+    position: relative;
+  }
+  #partners.carousel-item {
+    height: 380px;
+    padding-left: 3.5rem;
+    padding-right: 3.5rem;
+  }
 }
 /* @media (max-height: 768px) {
   .carousel-item {
@@ -11355,6 +11365,9 @@ header.masthead .masthead-heading {
 
 .img-brand {
   height: 2.75rem;
+}
+.img-partner {
+  height: 10rem;
 }
 
 section#contact {

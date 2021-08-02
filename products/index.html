@@ -30,6 +30,12 @@
 
 
 	<body>
+
+		<!-- <p><input id="subject" type="text" placeholder="type your subject here" 
+			class="form-control"></p>
+		<p><input id="message" type="text" placeholder="type your message here" 
+			class="form-control"></p>
+		<button><a id="mail-link" class="btn btn-danger" onclick="requestQuotation()">Create email</a></button> -->
 		
 		<div class="site-content">
 			<header class="site-header" data-bg-image="images/hayahay-homes/banner.jpg">
@@ -58,18 +64,18 @@
 									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla, dicta. Molestiae voluptatem laudantium tempora nemo vitae</p>
 
 									<div class="control">
-										<input type="text" placeholder="Your name...">
+										<input id="full_name" type="text" placeholder="Full name...">
 										<i class="fa fa-user"></i>
 									</div>
 									<div class="control">
-										<input type="text" placeholder="Email address...">
+										<input id="email_add" type="text" placeholder="Email address...">
 										<i class="fa fa-envelope"></i>
 									</div>
 									<div class="control">
-										<input type="text" placeholder="Phone number...">
+										<input id="phone_num" type="text" placeholder="Phone number...">
 										<i class="fa fa-phone"></i>
 									</div>
-									<input type="submit" style="font-weight: bold;" value="RESERVE NOW">
+									<input id="request-quotation" type="submit" class="btn btn-primary" style="font-weight: bold;" value="GET QUOTATION">
 									<p class="or-label">or</p>
 									<input type="submit" style="font-weight: bold;" value="BOOK SITE VISIT">
 								</form>
@@ -155,12 +161,48 @@
 					</div>
 				</div>
 			</footer>
+
+			<!-- <form id="javascript_form">
+				<input type="text" name="subject" placeholder="Subject" />
+				<textarea name="text" placeholder="Message"></textarea>
+				<input type="submit" id="js_send" value="Send" onclick="requestQuotation()"/>
+			</form> -->
 		</div>
 
 		<script src="js/jquery-1.11.1.min.js"></script>
 		<script src="js/plugins.js"></script>
 		<script src="js/app.js"></script>
-		
+
+		<!-- Script for sending quotation request -->
+		<script>
+			// function setColor(btn, color){
+			// 	var count=1;
+			// 	var property = document.getElementById(btn);
+			// 	if (count == 0){
+			// 		property.style.backgroundColor = "#FFFFFF"
+			// 		count=1;        
+			// 	}
+			// 	else{
+			// 		property.style.backgroundColor = "#7FFF00"
+			// 		count=0;
+			// 	}
+			
+			// }
+
+			function requestQuotation() {
+				var mailString;
+				function updateMailString() {
+					mailString = '?subject=' + encodeURIComponent($('#subject').val())
+						+ '&body=' + encodeURIComponent($('#message').val());
+					$('#mail-link').attr('href',  'mailto:gilbertrenegadodev@gmail.com' + mailString);
+				}
+				$( "#subject" ).focusout(function() { updateMailString(); });
+				$( "#message" ).focusout(function() { updateMailString(); });
+				updateMailString();
+			}
+
+		</script>
+
 	</body>
 
 </html>
