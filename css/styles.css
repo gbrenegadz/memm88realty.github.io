@@ -11433,10 +11433,10 @@ header.masthead .masthead-heading {
 
 section#contact {
   background-color: #212529;
-  /* background-image: url("../assets/img/contact-us/contact-us-bg.jpg"); */
+  background-image: url("../assets/img/contact-us/contact-us-bg.jpg");
   background-repeat: no-repeat;
   background-position: center;
-  /* background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.5)) , url("../assets/img/contact-us/contact-us-bg.jpg"); */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.5)) , url("../assets/img/contact-us/contact-us-bg.jpg");
 }
 section#contact .section-heading {
   color: #fff;
