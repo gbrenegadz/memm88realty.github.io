@@ -11,7 +11,9 @@
 
 		<!-- Loading third party fonts -->
 		<link href="http://fonts.googleapis.com/css?family=Roboto:300,400,700|" rel="stylesheet" type="text/css">
-		<link href="fonts/font-awesome.min.css" rel="stylesheet" type="text/css">
+		<!-- <link href="fonts/font-awesome.min.css" rel="stylesheet" type="text/css"> -->
+		<script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
+        <script defer src="https://use.fontawesome.com/releases/v5.15.3/js/v4-shims.js"></script>
 
 		<!-- Loading main css file -->
 		<link rel="stylesheet" href="style.css">
@@ -65,15 +67,15 @@
 
 									<div class="control">
 										<input id="full_name" type="text" placeholder="Full name...">
-										<i class="fa fa-user"></i>
+										<i class="fa fa-user" style="position: absolute; left: 15px; top: 15px;"></i>
 									</div>
 									<div class="control">
 										<input id="email_add" type="text" placeholder="Email address...">
-										<i class="fa fa-envelope"></i>
+										<i class="fa fa-envelope" style="position: absolute; left: 15px; top: 15px;"></i>
 									</div>
 									<div class="control">
 										<input id="phone_num" type="text" placeholder="Phone number...">
-										<i class="fa fa-phone"></i>
+										<i class="fa fa-phone" style="position: absolute; left: 15px; top: 15px;"></i>
 									</div>
 									<input id="request-quotation" type="submit" class="btn btn-primary" style="font-weight: bold;" value="GET QUOTATION">
 									<p class="or-label">or</p>
@@ -141,10 +143,16 @@
 			<footer class="site-footer">
 				<div class="container">
 					<br>
-					<div class="social-links">
-						<a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-						<a href="#" class="twitter"><i class="fa fa-instagram"></i></a>
-						<a href="#" class="google-plus"><i class="fa fa-youtube-play"></i></a>
+					<div class="row align-items-center">
+						<div class="col-lg-12 my-3 my-lg-0">
+							<a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-facebook-f"></i></a>
+							<a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-instagram"></i></a>
+							<a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-youtube"></i></a>
+						</div>
+						<!-- <div class="col-lg-4 text-lg-end">
+							<a class="link-dark text-decoration-none me-3" href="#!">Privacy Policy</a>
+							<a class="link-dark text-decoration-none" href="#!">Terms of Use</a>
+						</div> -->
 					</div>
 					<br>
 					<div class="row align-items-center">
@@ -168,33 +176,6 @@
 				<input type="submit" id="js_send" value="Send" onclick="requestQuotation()"/>
 			</form> -->
 
-			<!-- Messenger Chat Plugin Code -->
-			<div id="fb-root"></div>
-
-			<!-- Your Chat Plugin code -->
-			<div id="fb-customer-chat" class="fb-customerchat">
-			</div>
-		
-			<script>
-			  var chatbox = document.getElementById('fb-customer-chat');
-			  chatbox.setAttribute("page_id", "103853127709286");
-			  chatbox.setAttribute("attribution", "biz_inbox");
-		
-			  window.fbAsyncInit = function() {
-				FB.init({
-				  xfbml            : true,
-				  version          : 'v11.0'
-				});
-			  };
-		
-			  (function(d, s, id) {
-				var js, fjs = d.getElementsByTagName(s)[0];
-				if (d.getElementById(id)) return;
-				js = d.createElement(s); js.id = id;
-				js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
-				fjs.parentNode.insertBefore(js, fjs);
-			  }(document, 'script', 'facebook-jssdk'));
-			</script>
 		</div>
 
 		<script src="js/jquery-1.11.1.min.js"></script>

@@ -1137,6 +1137,7 @@ progress {
   .col-md-4 {
     flex: 0 0 auto;
     width: 33.3333333333%;
+    margin-bottom: 1rem;
   }
 
   .col-md-5 {
@@ -5891,7 +5892,7 @@ textarea.form-control-lg {
   justify-content: center;
   padding: 0;
   margin-right: 15%;
-  margin-bottom: 1rem;
+  margin-bottom: 1.25rem;
   margin-left: 15%;
   list-style: none;
 }
@@ -5966,10 +5967,10 @@ textarea.form-control-lg {
 .carousel-caption {
   position: absolute;
   right: 15%;
-  bottom: 1.25rem;
+  bottom: 1rem;
   left: 15%;
   padding-top: 1.25rem;
-  padding-bottom: 1.25rem;
+  padding-bottom: 4rem;
   color: #fff;
   text-align: center;
 }
@@ -11064,13 +11065,17 @@ p {
     text-align: center;
   }
   .carousel-item {
-    aspect-ratio: 16 / 8;
+    aspect-ratio: 16 / 8.24;
+    /* Center and scale the image nicely */
     height: 100%;
   }
 
   /* This is for the Partner caroussel */
   #partners.carousel-item > img {
-    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: fixed;
   }
   #partners.carousel-item {
     height: 380px;
@@ -11428,10 +11433,10 @@ header.masthead .masthead-heading {
 
 section#contact {
   background-color: #212529;
-  background-image: url("../assets/img/contact-us/contact-us-bg.jpg");
+  /* background-image: url("../assets/img/contact-us/contact-us-bg.jpg"); */
   background-repeat: no-repeat;
   background-position: center;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.5)) , url("../assets/img/contact-us/contact-us-bg.jpg");
+  /* background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.5)) , url("../assets/img/contact-us/contact-us-bg.jpg"); */
 }
 section#contact .section-heading {
   color: #fff;
@@ -11489,4 +11494,48 @@ section#contact form#contactForm :-ms-input-placeholder {
 
 .second-nav{
   top: 50px;
+}
+/* ***************
+ * FB on left side 
+ ******************/
+
+/* This is for the circle position */
+.fb_dialog.fb_dialog_advanced {
+  left: 18pt;
+}
+
+/* The following are for the chat box, on display and on hide */
+iframe.fb_customer_chat_bounce_in_v2 {
+  left: 9pt;
+}
+iframe.fb_customer_chat_bounce_out_v2 {
+  left: 9pt;
+}
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+/* Twitter */
+.col-lg-3 .fa-twitter {
+  background: #55ACEE;
+  color: white;
 }

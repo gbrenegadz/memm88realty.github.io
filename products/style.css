@@ -1432,12 +1432,6 @@ form textarea {
   margin-bottom: 30px;
   display: inline-block; }
 
-/*
- * Footer Styles
- */
-.site-footer {
-  padding: 50px 0; 
-}
 .site-footer .container {
   border-top: 1px solid #cfcfcf;
   text-align: center;
@@ -1465,3 +1459,29 @@ form textarea {
     background-color: #d3492c; }
   .social-links a.pinterest {
     background-color: #ca2128; }
+
+    .btn-dark {
+      color: #fff;
+      background-color: #212529;
+      border-color: #212529;
+    }
+    .btn-dark:hover {
+      color: #fff;
+      background-color: #1c1f23;
+      border-color: #1a1e21;
+    }
+
+    .btn-social {
+      height: 2.5rem;
+      width: 2.5rem;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0;
+      border-radius: 100%;
+    }
+
+    .mx-2 {
+      margin-right: 0.5rem !important;
+      margin-left: 0.5rem !important;
+    }

@@ -16,8 +16,11 @@
         <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
+        <link rel = "stylesheet" href = "bootstrap-social.css">
     </head>
     <body id="page-top">
+        <div id="fb-root"></div>
+        <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v11.0" nonce="gx5NWjyA"></script>
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
             <div class="container">
@@ -69,11 +72,11 @@
             </div>
         </header> -->
         <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-indicators">
+            <!-- <div class="carousel-indicators">
                 <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" aria-label="Slide 1" class="active" aria-current="true"></button>
                 <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2" class=""></button>
                 <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3" class=""></button>
-              </div>
+            </div> -->
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <img src="assets/img/header/img111.jpg" class="bd-placeholder-img" alt="img1">
@@ -133,7 +136,7 @@
             <div class="container">
                 <div class="text-center">
                     <h2 class="section-heading text-uppercase">Services</h2>
-                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                    <h3 class="section-subheading text-muted">Choose from our wide selection of properties</h3>
                 </div>
                 <div class="row text-center justify-content-md-center">
                     <div class="col-md-4">
@@ -143,7 +146,6 @@
                         </span> -->
                         <img src="assets/img/services/service11.jpg" class="rounded-circle" alt="service1">
                         <h4 class="my-3">House & Lot</h4>
-                        <p class="text-muted">Choose from our wide selection of House and Lot.</p>
                     </div>
                     <div class="col-md-4">
                         <!-- <span class="fa-stack fa-4x">
@@ -152,7 +154,6 @@
                         </span> -->
                         <img src="assets/img/services/service22.jpg" class="rounded-circle" alt="service2">
                         <h4 class="my-3">Condomunium</h4>
-                        <p class="text-muted">Experience premium living at the heart of Bohol</p>
                     </div>
                     <div class="col-md-4">
                         <!-- <span class="fa-stack fa-4x">
@@ -161,7 +162,6 @@
                         </span> -->
                         <img src="assets/img/services/service33.jpg" class="rounded-circle" alt="service3">
                         <h4 class="my-3">Lot Only</h4>
-                        <p class="text-muted">We got all your needs from Residential, Commercial or Farmlot.</p>
                     </div>
                 </div>
                 <div class="row text-center justify-content-md-center">
@@ -172,7 +172,6 @@
                         </span> -->
                         <img src="assets/img/services/service44.jpg" class="rounded-circle" alt="service1">
                         <h4 class="my-3">Malls</h4>
-                        <p class="text-muted">Description to be added.</p>
                     </div>
                     <div class="col-md-4">
                         <!-- <span class="fa-stack fa-4x">
@@ -181,7 +180,6 @@
                         </span> -->
                         <img src="assets/img/services/service55.jpg" class="rounded-circle" alt="service2">
                         <h4 class="my-3">Commercial</h4>
-                        <p class="text-muted">Description to be added.</p>
                     </div>
                     <div class="col-md-4">
                         <!-- <span class="fa-stack fa-4x">
@@ -190,13 +188,113 @@
                         </span> -->
                         <img src="assets/img/services/service66.jpg" class="rounded-circle" alt="service3">
                         <h4 class="my-3">Condotels</h4>
-                        <p class="text-muted">Description to be added.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Feattured Products Grid-->
+        <section class="page-section bg-light" id="products">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">Feature Products</h2>
+                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 col-sm-6 mb-4">
+                        <!-- Feattured Product item 1-->
+                        <div class="products-item">
+                            <a class="products-link" href="products/index.html">
+                                <div class="products-hover">
+                                    <div class="products-hover-content"><i class="fas fa-external-link-alt fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="assets/img/portfolio/jasmine.png" alt="..." />
+                            </a>
+                            <div class="products-caption">
+                                <div class="products-caption-heading">Jasmine</div>
+                                <div class="products-caption-subheading text-muted">Libertad, Baclayon, Bohol</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-4">
+                        <!-- Feattured Product item 2-->
+                        <div class="products-item">
+                            <a class="products-link" href="products/index.html">
+                                <div class="products-hover">
+                                    <div class="products-hover-content"><i class="fas fa-external-link-alt fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="assets/img/portfolio/rosemary.png" alt="..." />
+                            </a>
+                            <div class="products-caption">
+                                <div class="products-caption-heading">Rosemary</div>
+                                <div class="products-caption-subheading text-muted">Libertad, Baclayon, Bohol</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-4">
+                        <!-- Feattured Product item 3-->
+                        <div class="products-item">
+                            <a class="products-link" href="products/index.html">
+                                <div class="products-hover">
+                                    <div class="products-hover-content"><i class="fas fa-external-link-alt fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="assets/img/portfolio/ivy.png" alt="..." />
+                            </a>
+                            <div class="products-caption">
+                                <div class="products-caption-heading">Ivy</div>
+                                <div class="products-caption-subheading text-muted">Libertad, Baclayon, Bohol</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
+                        <!-- Feattured Product item 4-->
+                        <div class="products-item">
+                            <a class="products-link" href="products/index.html">
+                                <div class="products-hover">
+                                    <div class="products-hover-content"><i class="fas fa-external-link-alt fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="assets/img/portfolio/sofia.png" alt="..." />
+                            </a>
+                            <div class="products-caption">
+                                <div class="products-caption-heading">Sofia</div>
+                                <div class="products-caption-subheading text-muted">Libertad, Baclayon, Bohol</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-4 mb-sm-0">
+                        <!-- Feattured Product item 5-->
+                        <div class="products-item">
+                            <a class="products-link" href="products/index.html">
+                                <div class="products-hover">
+                                    <div class="products-hover-content"><i class="fas fa-external-link-alt fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="assets/img/portfolio/hazel.png" alt="..." />
+                            </a>
+                            <div class="products-caption">
+                                <div class="products-caption-heading">Hazel</div>
+                                <div class="products-caption-subheading text-muted">Libertad, Baclayon, Bohol</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <!-- Feattured Product item 6-->
+                        <div class="products-item">
+                            <a class="products-link" href="products/index.html">
+                                <div class="products-hover">
+                                    <div class="products-hover-content"><i class="fas fa-external-link-alt fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="assets/img/portfolio/hermoso-grande.png" alt="..." />
+                            </a>
+                            <div class="products-caption">
+                                <div class="products-caption-heading">Hermoso Grande</div>
+                                <div class="products-caption-subheading text-muted">Panglao Island, Bohol</div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
         <!-- Partners-->
-        <section class="page-section bg-light" id="partners">
+        <section class="page-section bg-white" id="partners">
             <div class="container">
                 <div class="text-center">
                     <h2 class="section-heading text-uppercase">Our Partners</h2>
@@ -335,107 +433,6 @@
                       <span class="carousel-control-next-icon" aria-hidden="true"></span>
                       <span class="visually-hidden">Next</span>
                     </button> -->
-                </div>
-            </div>
-        </section>
-        <!-- Feattured Products Grid-->
-        <section class="page-section bg-white" id="products">
-            <div class="container">
-                <div class="text-center">
-                    <h2 class="section-heading text-uppercase">Feature Products</h2>
-                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
-                </div>
-                <div class="row">
-                    <div class="col-lg-4 col-sm-6 mb-4">
-                        <!-- Feattured Product item 1-->
-                        <div class="products-item">
-                            <a class="products-link" href="products/index.html">
-                                <div class="products-hover">
-                                    <div class="products-hover-content"><i class="fas fa-external-link-alt fa-3x"></i></div>
-                                </div>
-                                <img class="img-fluid" src="assets/img/portfolio/jasmine.png" alt="..." />
-                            </a>
-                            <div class="products-caption">
-                                <div class="products-caption-heading">Jasmine</div>
-                                <div class="products-caption-subheading text-muted">Libertad, Baclayon, Bohol</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-sm-6 mb-4">
-                        <!-- Feattured Product item 2-->
-                        <div class="products-item">
-                            <a class="products-link" href="products/index.html">
-                                <div class="products-hover">
-                                    <div class="products-hover-content"><i class="fas fa-external-link-alt fa-3x"></i></div>
-                                </div>
-                                <img class="img-fluid" src="assets/img/portfolio/rosemary.png" alt="..." />
-                            </a>
-                            <div class="products-caption">
-                                <div class="products-caption-heading">Rosemary</div>
-                                <div class="products-caption-subheading text-muted">Libertad, Baclayon, Bohol</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-sm-6 mb-4">
-                        <!-- Feattured Product item 3-->
-                        <div class="products-item">
-                            <a class="products-link" href="products/index.html">
-                                <div class="products-hover">
-                                    <div class="products-hover-content"><i class="fas fa-external-link-alt fa-3x"></i></div>
-                                </div>
-                                <img class="img-fluid" src="assets/img/portfolio/ivy.png" alt="..." />
-                            </a>
-                            <div class="products-caption">
-                                <div class="products-caption-heading">Ivy</div>
-                                <div class="products-caption-subheading text-muted">Libertad, Baclayon, Bohol</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
-                        <!-- Feattured Product item 4-->
-                        <div class="products-item">
-                            <a class="products-link" href="products/index.html">
-                                <div class="products-hover">
-                                    <div class="products-hover-content"><i class="fas fa-external-link-alt fa-3x"></i></div>
-                                </div>
-                                <img class="img-fluid" src="assets/img/portfolio/sofia.png" alt="..." />
-                            </a>
-                            <div class="products-caption">
-                                <div class="products-caption-heading">Sofia</div>
-                                <div class="products-caption-subheading text-muted">Libertad, Baclayon, Bohol</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-sm-6 mb-4 mb-sm-0">
-                        <!-- Feattured Product item 5-->
-                        <div class="products-item">
-                            <a class="products-link" href="products/index.html">
-                                <div class="products-hover">
-                                    <div class="products-hover-content"><i class="fas fa-external-link-alt fa-3x"></i></div>
-                                </div>
-                                <img class="img-fluid" src="assets/img/portfolio/hazel.png" alt="..." />
-                            </a>
-                            <div class="products-caption">
-                                <div class="products-caption-heading">Hazel</div>
-                                <div class="products-caption-subheading text-muted">Libertad, Baclayon, Bohol</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-sm-6">
-                        <!-- Feattured Product item 6-->
-                        <div class="products-item">
-                            <a class="products-link" href="products/index.html">
-                                <div class="products-hover">
-                                    <div class="products-hover-content"><i class="fas fa-external-link-alt fa-3x"></i></div>
-                                </div>
-                                <img class="img-fluid" src="assets/img/portfolio/hermoso-grande.png" alt="..." />
-                            </a>
-                            <div class="products-caption">
-                                <div class="products-caption-heading">Hermoso Grande</div>
-                                <div class="products-caption-subheading text-muted">Panglao Island, Bohol</div>
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </div>
         </section>
@@ -603,6 +600,36 @@
                     </div>
                     <div class="col-lg-2"></div>
                 </div>
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="team-member">
+                            <img class="mx-auto rounded-circle" src="assets/img/team/meldred-gako.jpg" alt="..." />
+                            <h4>Atty. Name Holder</h4>
+                            <p class="text-muted">Legal Coucil</p>
+                            <a class="btn btn-dark btn-social mx-2" href="https://m.me/mildred.espanol.5" target="_blank"><i class="fab fa-facebook-messenger"></i></a>
+                            <a class="btn btn-dark btn-social mx-2" href="https://www.facebook.com/mildred.espanol.5" target="_blank"><i class="fab fa-facebook-f" target="_blank"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="team-member">
+                            <img class="mx-auto rounded-circle" src="assets/img/team/sean-cu.jpg" alt="..." />
+                            <h4>Name Holder</h4>
+                            <p class="text-muted">Investor</p>
+                            <a class="btn btn-dark btn-social mx-2" href="https://m.me/petersean.sastre" target="_blank"><i class="fab fa-facebook-messenger"></i></a>
+                            <a class="btn btn-dark btn-social mx-2" href="https://www.facebook.com/petersean.sastre" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="team-member">
+                            <img class="mx-auto rounded-circle" src="assets/img/team/gilbert-renegado.jpg" alt="..." />
+                            <h4>Gilbert Renegado</h4>
+                            <p class="text-muted">IT</p>
+                            <a class="btn btn-dark btn-social mx-2" href="https://m.me/christopher.samuya.32" target="_blank"><i class="fab fa-facebook-messenger"></i></a>
+                            <a class="btn btn-dark btn-social mx-2" href="https://www.facebook.com/christopher.samuya.32" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-2"></div>
+                </div>
                 <br><br><br>
                 <!-- Sales Managers & Top Leaders -->
                 <div class="row">
@@ -762,8 +789,19 @@
             <div class="container">
                 <div class="text-center">
                     <h2 class="section-heading text-uppercase">Contact Us</h2>
-                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                    <h3 class="section-subheading text-muted"></h3>
                 </div>
+                <div class="container-fluid px-4 px-lg-0">
+                    <h4 class="col-lg-8 mx-auto text-uppercase text-center text-white fw-normal">Email</h4>
+                    <h4 class="col-lg-8 mx-auto text-lowercase text-center text-white fw-lighter">memmrealty@gmail.com</h4>
+                    <br><br>
+                    <h4 class="col-lg-8 mx-auto text-uppercase text-center text-white fw-normal">Phone</h4>
+                    <h4 class="col-lg-8 mx-auto text-lowercase text-center text-white fw-lighter">+63995-091-2758</h4>
+                    <br><br>
+                    <h4 class="col-lg-8 mx-auto text-uppercase text-center text-white fw-normal">Location</h4>
+                    <h4 class="col-lg-8 mx-auto text-center text-white fw-lighter">Tagbilaran North Rd 6300 Tagbilaran City, Philippines</h4>
+                </div>
+                <br><br><br>
                 <form id="contactForm">
                     <div class="row align-items-stretch mb-5">
                         <div class="col-md-6">
@@ -821,199 +859,7 @@
                 </div>
             </div>
         </footer>
-        <!-- Feattured Product Modals-->
-        <!-- Feattured Product item 1 modal popup-->
-        <div class="products-modal modal fade" id="productsModal1" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="close-modal" data-bs-dismiss="modal"><button type="button" class="btn-close" aria-label="Close"></button></em></div>
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <div class="modal-body">
-                                    <!-- Project details-->
-                                    <h2 class="text-uppercase">Jasmine</h2>
-                                    <p class="item-intro text-muted">Libertad, Baclayon, Bohol</p>
-                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/jasmine.png" alt="..." />
-                                    <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                                    <ul class="list-inline">
-                                        <li>
-                                            <strong>Lot Area:</strong>
-                                            100 sq.m.
-                                        </li>
-                                        <li>
-                                            <strong>Floor Area:</strong>
-                                            40 sq.m.
-                                        </li>
-                                    </ul>
-                                    <button class="btn btn-danger btn-xl text-uppercase" data-bs-dismiss="modal" type="button">Close</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Feattured Product item 2 modal popup-->
-        <div class="products-modal modal fade" id="productsModal2" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="close-modal" data-bs-dismiss="modal"><button type="button" class="btn-close" aria-label="Close"></div>
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <div class="modal-body">
-                                    <!-- Project details-->
-                                    <h2 class="text-uppercase">Rosemary</h2>
-                                    <p class="item-intro text-muted">Libertad, Baclayon, Bohol</p>
-                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/rosemary-white-bg.png" alt="..." />
-                                    <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                                    <ul class="list-inline">
-                                        <li>
-                                            <strong>Lot Area:</strong>
-                                            100 sq.m.
-                                        </li>
-                                        <li>
-                                            <strong>Floor Area:</strong>
-                                            40 sq.m.
-                                        </li>
-                                    </ul>
-                                    <button class="btn btn-danger btn-xl text-uppercase" data-bs-dismiss="modal" type="button">Close</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Feattured Product item 3 modal popup-->
-        <div class="products-modal modal fade" id="productsModal3" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="close-modal" data-bs-dismiss="modal"><button type="button" class="btn-close" aria-label="Close"></div>
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <div class="modal-body">
-                                    <!-- Project details-->
-                                    <h2 class="text-uppercase">Ivy</h2>
-                                    <p class="item-intro text-muted">Libertad, Baclayon, Bohol</p>
-                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/ivy-white-bg.png" alt="..." />
-                                    <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                                    <ul class="list-inline">
-                                        <li>
-                                            <strong>Lot Area:</strong>
-                                            100 sq.m.
-                                        </li>
-                                        <li>
-                                            <strong>Floor Area:</strong>
-                                            40 sq.m.
-                                        </li>
-                                    </ul>
-                                    <button class="btn btn-danger btn-xl text-uppercase" data-bs-dismiss="modal" type="button">Close</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Feattured Product item 4 modal popup-->
-        <div class="products-modal modal fade" id="productsModal4" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="close-modal" data-bs-dismiss="modal"><button type="button" class="btn-close" aria-label="Close"></div>
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <div class="modal-body">
-                                    <!-- Project details-->
-                                    <h2 class="text-uppercase">Sofia</h2>
-                                    <p class="item-intro text-muted">Libertad, Baclayon, Bohol</p>
-                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/sofia.png" alt="..." />
-                                    <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                                    <ul class="list-inline">
-                                        <li>
-                                            <strong>Lot Area:</strong>
-                                            100 sq.m.
-                                        </li>
-                                        <li>
-                                            <strong>Floor Area:</strong>
-                                            40 sq.m.
-                                        </li>
-                                    </ul>
-                                    <button class="btn btn-danger btn-xl text-uppercase" data-bs-dismiss="modal" type="button">Close</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Feattured Product item 5 modal popup-->
-        <div class="products-modal modal fade" id="productsModal5" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="close-modal" data-bs-dismiss="modal"><button type="button" class="btn-close" aria-label="Close"></div>
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <div class="modal-body">
-                                    <!-- Project details-->
-                                    <h2 class="text-uppercase">Hazel</h2>
-                                    <p class="item-intro text-muted">Libertad, Baclayon, Bohol</p>
-                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/hazel.png" alt="..." />
-                                    <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                                    <ul class="list-inline">
-                                        <li>
-                                            <strong>Lot Area:</strong>
-                                            100 sq.m.
-                                        </li>
-                                        <li>
-                                            <strong>Floor Area:</strong>
-                                            40 sq.m.
-                                        </li>
-                                    </ul>
-                                    <button class="btn btn-danger btn-xl text-uppercase" data-bs-dismiss="modal" type="button">Close</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Feattured Product item 6 modal popup-->
-        <div class="products-modal modal fade" id="productsModal6" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="close-modal" data-bs-dismiss="modal"><button type="button" class="btn-close" aria-label="Close"></div>
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <div class="modal-body">
-                                    <!-- Project details-->
-                                    <h2 class="text-uppercase">Hermoso Grande</h2>
-                                    <p class="item-intro text-muted">Panglao Island, Bohol</p>
-                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/hermoso-grande.png" alt="..." />
-                                    <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                                    <ul class="list-inline">
-                                        <li>
-                                            <strong>Lot Area:</strong>
-                                            100 sq.m.
-                                        </li>
-                                        <li>
-                                            <strong>Floor Area:</strong>
-                                            40 sq.m.
-                                        </li>
-                                    </ul>
-                                    <button class="btn btn-danger btn-xl text-uppercase" data-bs-dismiss="modal" type="button">Close</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+        
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
