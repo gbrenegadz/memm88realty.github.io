@@ -11039,9 +11039,9 @@ p {
 }
 
 /* Declare heights because of positioning of img element */
-.carousel-item {
+/* .carousel-item {
   max-height: 100vh;
-}
+} */
 .carousel-item > img {
   position: relative;
   min-width: 100vw;
@@ -11089,7 +11089,7 @@ p {
     position: absolute;
   }
   #sales-managers.carousel-item {
-    height: 24rem;
+    max-height: 500px;
     padding-left: 3.5rem;
     padding-right: 3.5rem;
   }
